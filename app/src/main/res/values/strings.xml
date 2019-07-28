@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TheMovies</string>
+    <string name="base_url_movies_api">https://api.themoviedb.org/</string>
+</resources>

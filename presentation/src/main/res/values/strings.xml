@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">presentation</string>
+    <string name="movie_title">Recommendation\nMovies</string>
+    <string name="image_base_url">https://image.tmdb.org/t/p/w500/</string>
+    <string name="api_key">1edeb9ac8156f4fd1ebd4bb7081667a1</string>
+</resources>

@@ -1,0 +1,10 @@
+dependencies {
+    // ANDROID TEST
+    androidTestImplementation TestLibraries.androidTestRunner
+    androidTestImplementation TestLibraries.espresso
+    // ANDROID
+    androidTestImplementation TestLibraries.archCoreTest
+    androidTestImplementation TestLibraries.junit
+    // MOCK
+    androidTestImplementation TestLibraries.mockk
+}

@@ -1,0 +1,8 @@
+dependencies {
+    implementation Libraries.retrofitRxAdapter
+    implementation Libraries.rxAndroid
+    implementation Libraries.gson
+    implementation Libraries.retrofit
+    implementation Libraries.retrofitGsonConverter
+    implementation Libraries.httpLoggingInterceptor
+}

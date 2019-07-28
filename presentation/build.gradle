@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: '../android_commons.gradle'
+apply from: '../android_core_dependencies.gradle'
+apply from: '../android_network_dependencies.gradle'
+android {
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation project(Modules.common)
+    implementation project(Modules.domain)
+
+    implementation Libraries.rxKotlin
+
+    implementation Libraries.glide
+    kapt Libraries.glideCompiler
+    implementation Libraries.dagger
+    implementation Libraries.daggerAndroid
+    implementation Libraries.daggerAndroidSupport
+    kapt Libraries.daggerCompiler
+    kapt Libraries.daggerProcessor
+
+}

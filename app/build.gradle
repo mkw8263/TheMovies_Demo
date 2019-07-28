@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+apply from: '../android_commons.gradle'
+apply from: '../android_network_dependencies.gradle'
+apply plugin: 'kotlin-kapt'
+android {
+    defaultConfig {
+        applicationId ApplicationId.id
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation project(Modules.domain)
+    implementation project(Modules.presentation)
+    implementation project(Modules.data)
+    implementation project(Modules.common)
+
+    implementation Libraries.dagger
+    implementation Libraries.daggerAndroid
+    implementation Libraries.daggerAndroidSupport
+    kapt Libraries.daggerCompiler
+    kapt Libraries.daggerProcessor
+}
