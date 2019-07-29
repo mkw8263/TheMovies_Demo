@@ -1,8 +1,7 @@
 package com.themovies.sample.di.module
 
-import com.themovies.data.MovieRepository
+import com.themovies.domain.MovieRepository
 import com.themovies.domain.usecase.MovieUseCase
-import com.themovies.domain.mapper.MoviesMapper
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
@@ -11,8 +10,8 @@ import javax.inject.Named
 class UseCaseModule {
     @Provides
     fun provideMovieUseCase(
-        @Named("MovieRepositoryImpl") movieRepository: MovieRepository, moviesMapper: MoviesMapper
+        @Named("MovieRepositoryImpl") movieRepository: MovieRepository
     ): MovieUseCase {
-        return MovieUseCase(movieRepository, moviesMapper)
+        return MovieUseCase(movieRepository)
     }
 }

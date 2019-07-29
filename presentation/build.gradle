@@ -11,9 +11,6 @@ android {
     dataBinding {
         enabled true
     }
-    androidExtensions {
-        experimental = true
-    }
 }
 
 dependencies {
@@ -29,5 +26,4 @@ dependencies {
     implementation Libraries.daggerAndroidSupport
     kapt Libraries.daggerCompiler
     kapt Libraries.daggerProcessor
-
 }

@@ -1,4 +1,4 @@
-package com.themovies.domain.mapper
+package com.themovies.data.mapper
 
 import com.themovies.data.entity.DataEntityMovies
 import com.themovies.domain.entitiy.DomainEntityMovie

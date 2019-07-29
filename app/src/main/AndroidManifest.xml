@@ -13,14 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name="com.themovies.presentation.ui.movies.MoviesActivity">
+        <activity
+            android:name="com.themovies.presentation.ui.movies.MoviesActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.themovies.presentation.ui.detail.MovieDetailActivity" />
+        <activity
+            android:name="com.themovies.presentation.ui.detail.MovieDetailActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

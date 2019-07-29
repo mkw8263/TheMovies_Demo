@@ -6,14 +6,11 @@ apply plugin: 'kotlin-kapt'
 
 dependencies {
     implementation project(Modules.common)
+    implementation project(Modules.domain)
 
     implementation Libraries.dagger
     implementation Libraries.daggerAndroid
     implementation Libraries.daggerAndroidSupport
     kapt Libraries.daggerCompiler
     kapt Libraries.daggerProcessor
-
-
-    testImplementation TestLibraries.junit
-    testImplementation TestLibraries.mockWebServer
 }

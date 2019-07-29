@@ -45,10 +45,10 @@ class MoviesActivity : BaseActivity<ActivityMovieBinding>() {
     }
 
     private fun startMovieDetailActivity(domainEntityMovie: DomainEntityMovie) {
-        Intent(this, MovieDetailActivity::class.java).apply {
+        val intent = Intent(this, MovieDetailActivity::class.java).apply {
             putExtra(MovieDetailActivity.EXTRA_MOVIE_DATA, domainEntityMovie)
-        }.also {
-            (it to sceneTransitionAnimation(rv_movies).toBundle())
-        }.run(::startActivity)
+        }
+
+        startActivity(intent, sceneTransitionAnimation(rv_movies).toBundle())
     }
 }
