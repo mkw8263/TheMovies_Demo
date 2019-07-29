@@ -7,4 +7,5 @@ dependencies {
     androidTestImplementation TestLibraries.junit
     // MOCK
     androidTestImplementation TestLibraries.mockk
+    androidTestImplementation TestLibraries.mockWebServer
 }

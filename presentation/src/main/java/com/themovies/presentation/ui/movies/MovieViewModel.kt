@@ -2,8 +2,8 @@ package com.themovies.presentation.ui.movies
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.themovies.domain.usecase.MovieUseCase
 import com.themovies.domain.entitiy.DomainEntityMovie
+import com.themovies.domain.usecase.MovieUseCase
 import com.themovies.presentation.BaseViewModel
 import io.reactivex.rxkotlin.addTo
 import javax.inject.Inject
