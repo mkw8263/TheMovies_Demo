@@ -1,14 +1,15 @@
-# TheMovies_Demo
+## TheMovies_Demo
+----
 
 ## Demo
 ----
 ![gif](https://github.com/mkw8263/TheMovies_Demo/blob/master/demo.gif)
 
-REST API
+## REST API
 ----
 https://www.themoviedb.org/
 
-Languages, libraries and tools used
+## Languages, libraries and tools used
 ----
 * Kotlin
 * Dagger2
