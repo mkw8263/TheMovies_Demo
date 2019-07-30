@@ -1,9 +1,11 @@
 package com.themovies.common
 
 import android.app.Activity
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.view.ViewCompat
@@ -18,4 +20,9 @@ fun Activity.sceneTransitionAnimation(targetView: View): ActivityOptionsCompat {
         targetView,
         ViewCompat.getTransitionName(targetView).orEmpty()
     )
+}
+
+
+fun Context.toast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }

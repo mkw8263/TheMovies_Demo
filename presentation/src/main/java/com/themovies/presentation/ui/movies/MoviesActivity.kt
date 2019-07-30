@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.themovies.common.createViewModel
 import com.themovies.common.ob
 import com.themovies.common.sceneTransitionAnimation
+import com.themovies.common.toast
 import com.themovies.domain.entitiy.DomainEntityMovie
 import com.themovies.presentation.BaseActivity
 import com.themovies.presentation.R
@@ -38,9 +39,10 @@ class MoviesActivity : BaseActivity<ActivityMovieBinding>() {
         ob(viewModel.liveResult, ::result)
     }
 
-    private fun result(result: MovieViewModel.Result) {
+    private fun result(result: MovieViewModel.State) {
         when (result) {
-            is MovieViewModel.Result.AdapterOnClick -> startMovieDetailActivity(result.domainEntityMovie)
+            is MovieViewModel.State.AdapterOnClick -> startMovieDetailActivity(result.domainEntityMovie)
+            is MovieViewModel.State.ErrorMessage -> toast(getString(result.msg))
         }
     }
 

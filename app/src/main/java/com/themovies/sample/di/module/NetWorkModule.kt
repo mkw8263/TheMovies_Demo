@@ -19,6 +19,10 @@ import javax.inject.Singleton
 
 @Module
 class NetWorkModule {
+    companion object {
+        const val NETWORK_TIME_OUT: Long = 15
+    }
+
 
     @Provides
     @Singleton
@@ -67,10 +71,5 @@ class NetWorkModule {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
             .create(MovieService::class.java)
-    }
-
-    companion object {
-        const val HEADER_AUTH_PARAM = "Authorization"
-        const val NETWORK_TIME_OUT: Long = 15
     }
 }
