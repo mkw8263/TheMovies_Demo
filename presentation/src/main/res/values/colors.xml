@@ -5,4 +5,7 @@
     <color name="colorAccent">#ffe812</color>
 
     <color name="movie_background_color">#EEF7F8FA</color>
+
+    <!--movieDetail activity-->
+    <color name="movie_detail_overview">#AE818181</color>
 </resources>

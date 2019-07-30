@@ -8,7 +8,6 @@ object Modules {
     val presentation = ":presentation"
     val data = ":data"
     val common = ":common"
-    val commonTest = ":common_test"
 }
 
 object Releases {
@@ -30,7 +29,6 @@ object Versions {
     val retrofitGson = "2.4.0"
     val gson = "2.8.5"
     val okHttp = "3.12.1"
-    val coroutines = "1.3.0-M2"
     val rxKotlin = "2.4.0-RC3"
     val rxjava2Adapter = "2.5.0"
     val rxAndroid = "2.1.1"
@@ -69,9 +67,6 @@ object KotlinLibraries {
 }
 
 object AndroidLibraries {
-    // KOTLIN
-    val kotlinCoroutineAndroid =
-        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     // ANDROID
     val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"

@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="13dp"
                     android:text="@{movie.overview}"
-                    android:textColor="#AE818181"
+                    android:textColor="@color/movie_detail_overview"
                     android:textSize="15dp"
                     tools:ignore="SpUsage" />
 
