@@ -1,16 +1,11 @@
 ## TheMovies_Demo
-----
-
 ## Demo
-----
 ![gif](https://github.com/mkw8263/TheMovies_Demo/blob/master/demo.gif)
 
 ## REST API
-----
 https://www.themoviedb.org/
 
 ## Languages, libraries and tools used
-----
 * Kotlin
 * Dagger2
 * RxKotlin
@@ -24,5 +19,4 @@ https://www.themoviedb.org/
 * Glide
 
 ## Dependency
-----
 ![imge](https://github.com/mkw8263/TheMovies_Demo/blob/master/dependency.png)
